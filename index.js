@@ -28,10 +28,12 @@ bot.on('message', function(data) {
             case "ola":
                 response = "🌊";
                 break;
-            default:
-                if (message.search(" tu tranquis") != -1 ) {
-                    response = "tu tranquis";
-                }
+            case "ya nada": 
+                response = "yo no fui";
+                break;
+            case "tu bien sabes quien fue":
+                response = "te digo quien fue?";            
+                break
         }
 
 
