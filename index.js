@@ -26,7 +26,7 @@ bot.on('message', function(data) {
         var response = null;
         switch(message){
             case "ola":
-                response = "oli";
+                response = "🌊";
                 break;
         }
 
