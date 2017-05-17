@@ -34,18 +34,19 @@ bot.on('message', function(data) {
             {
                 response  = "tu tranquis";
             }
-            else 
-        switch(message){
-            case "ola":
-                response = "🌊";
-                break;
-            case "ya nada": 
-                response = "yo no fui";
-                break;
-            case "tu bien sabes quien fue":
-                response = "te digo quien fue?";            
-                break
-        }
+            else {
+                switch(message){
+                    case "ola":
+                        response = "🌊";
+                        break;
+                    case "ya nada": 
+                        response = "yo no fui";
+                        break;
+                    case "tu bien sabes quien fue":
+                        response = "te digo quien fue?";            
+                        break
+                }
+            }
         }
 
 
