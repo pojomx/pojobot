@@ -24,18 +24,28 @@ bot.on('message', function(data) {
         var message = data.text.toLowerCase();
 
         var response = null;
-        switch(message){
+
+        switch (message)
+        {
             case "ola":
-                response = "🌊";
-                break;
-            case 'mocos':
-                response = "putos todos";
+                respnse = "🌊";
+                break
+            default:
+                if (message.search("ya nada") != -1 ) {
+                    response = "ya nada";
+                }
                 break;
         }
 
         // no lower case for topics
         var message = data.text;
         console.log(message);
+
+        if(response!==null){
+            console.log(data);
+            bot.postMessage(data.channel, response, settings);            
+        }
+
     }
 });
 
