@@ -19,7 +19,7 @@ bot.on('message', function(data) {
     var isBot = data.subtype === "bot_message";
 
 
-    if( isMessage && !isMe ){
+    if( isMessage && !isBot ){
 
         var message = data.text.toLowerCase();
 
