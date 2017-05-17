@@ -25,7 +25,7 @@ bot.on('message', function(data) {
 
         var response = null;
 
-        if(message.search(ola) != -1)
+        if(message.search("ola") != -1)
         {
             response = "🌊";
         } else {
