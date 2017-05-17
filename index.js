@@ -28,8 +28,11 @@ bot.on('message', function(data) {
             case "ola":
                 response = "🌊";
                 break;
+            default:
+                if (message.search("ya nada") != -1 ) {
+                    response = "ya nada";
+                }
         }
-
 
 
         if(response!==null){
