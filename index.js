@@ -24,29 +24,28 @@ bot.on('message', function(data) {
         var message = data.text.toLowerCase();
 
         var response = null;
-
-        if(message.search("ola") != -1)
-        {
-            response = "🌊";
-        } else {
-
-            if (message.search("tu tranquis")!= -1)
-            {
-                response  = "tu tranquis";
-            }
-            else {
-                switch(message){
-                    case "ola":
-                        response = "🌊";
-                        break;
-                    case "ya nada": 
-                        response = "yo no fui";
-                        break;
-                    case "tu bien sabes quien fue":
-                        response = "te digo quien fue?";            
-                        break
+    
+        switch(message){
+            case "ola":
+                response = "🌊";
+                break;
+            case "ya nada": 
+                response = "yo no fui";
+                break;
+            case "tu bien sabes quien fue":
+                response = "te digo quien fue?";            
+                break
+            default:
+                if(message.search("ola")>=0)
+                {
+                    response = "🌊";
                 }
-            }
+
+                if (message.search(" tu tranquis")>=0)
+                {
+                    response = "tu tranquis";
+                }
+                break;
         }
 
 
