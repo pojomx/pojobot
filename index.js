@@ -19,11 +19,22 @@ bot.on('message', function(data) {
     var isBot = data.subtype === "bot_message";
 
 
-    if( isMessage && !isBot ){
+    if( isMessage && !isMe ){
 
         var message = data.text.toLowerCase();
 
         var response = null;
+
+        if(message.search(ola) != -1)
+        {
+            response = "🌊";
+        } else {
+
+            if (message.search("tu tranquis")!= -1)
+            {
+                response  = "tu tranquis";
+            }
+            else 
         switch(message){
             case "ola":
                 response = "🌊";
@@ -34,6 +45,7 @@ bot.on('message', function(data) {
             case "tu bien sabes quien fue":
                 response = "te digo quien fue?";            
                 break
+        }
         }
 
 
