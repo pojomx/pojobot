@@ -29,8 +29,8 @@ bot.on('message', function(data) {
                 response = "🌊";
                 break;
             default:
-                if (message.search(" ya nada") != -1 ) {
-                    response = "ya nada";
+                if (message.search(" tu tranquis") != -1 ) {
+                    response = "tu tranquis";
                 }
         }
 
