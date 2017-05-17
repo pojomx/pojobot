@@ -28,22 +28,14 @@ bot.on('message', function(data) {
             case "ola":
                 response = "🌊";
                 break;
+            case 'mocos':
+                response = "putos todos";
+                break;
         }
 
         // no lower case for topics
         var message = data.text;
         console.log(message);
-
-        if(message.substring(0,19) == "<@U5F6MCKM4> topic "){
-            response = "/topic "+message.substring(19);
-            console.log(response);
-        }
-
-        if(response!==null){
-            console.log(data);
-            bot.postMessage(data.channel, response, settings);            
-        }
-
     }
 });
 
