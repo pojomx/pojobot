@@ -38,7 +38,7 @@ bot.on('message', function(data) {
             default:
                 if (message.search("dna">=0))
                 {
-                    if (!isMe){
+                    if (!isBot){
                         response = "te llaman @dna";
                     }
                 }
