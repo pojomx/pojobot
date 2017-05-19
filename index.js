@@ -38,7 +38,9 @@ bot.on('message', function(data) {
             default:
                 if (message.search(" dna">=0))
                 {
-                   // response = "te llaman @dna";
+                    if (!isMe){
+                        response = "te llaman @dna";
+                    }
                 }
                 if(message.search("ola")>=0)
                 {
