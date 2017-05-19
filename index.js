@@ -36,7 +36,7 @@ bot.on('message', function(data) {
                 response = "te digo quien fue?";            
                 break
             default:
-                if (message.search(" dna">=0))
+                if (message.search("dna">=0))
                 {
                     if (!isMe){
                         response = "te llaman @dna";
