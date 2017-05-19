@@ -36,6 +36,10 @@ bot.on('message', function(data) {
                 response = "te digo quien fue?";            
                 break
             default:
+                if (message.search(" dna">=0))
+                {
+                    response = "te llaman @dna";
+                }
                 if(message.search("ola")>=0)
                 {
                     response = "🌊";
